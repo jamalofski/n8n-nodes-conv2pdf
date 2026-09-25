@@ -1,0 +1,30 @@
+{
+	"node": "n8n-nodes-conv2pdf",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Productivity", "Utility"],
+	"alias": [
+		"pdf",
+		"word to pdf",
+		"docx to pdf",
+		"excel to pdf",
+		"powerpoint to pdf",
+		"pdf to word",
+		"merge pdf",
+		"split pdf",
+		"compress pdf",
+		"convert"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/jamalofski/n8n-nodes-conv2pdf#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/jamalofski/n8n-nodes-conv2pdf#readme"
+			}
+		]
+	}
+}

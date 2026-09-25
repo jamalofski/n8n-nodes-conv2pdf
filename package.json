@@ -1,0 +1,64 @@
+{
+	"name": "n8n-nodes-conv2pdf",
+	"version": "0.0.1",
+	"description": "Official n8n node for the conv2pdf API: convert and manipulate PDF files in your workflows (Word, Excel and PowerPoint to PDF, PDF to Word, merge, split, compress and more), hosted in France.",
+	"license": "MIT",
+	"homepage": "https://conv2pdf.com/api/",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"conv2pdf",
+		"pdf",
+		"pdf conversion",
+		"word to pdf",
+		"docx to pdf",
+		"pdf to word",
+		"merge pdf",
+		"compress pdf"
+	],
+	"author": {
+		"name": "Jamal Tantaoui",
+		"email": "contact@conv2pdf.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jamalofski/n8n-nodes-conv2pdf.git"
+	},
+	"bugs": {
+		"url": "https://github.com/jamalofski/n8n-nodes-conv2pdf/issues"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"test": "n8n-node build && node --test test/*.test.js",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist",
+		"!dist/**/*.tsbuildinfo"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/Conv2pdfApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Conv2pdf/Conv2pdf.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "^0.49.1",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^19.0.4",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
