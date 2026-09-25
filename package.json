@@ -1,9 +1,9 @@
 {
 	"name": "n8n-nodes-conv2pdf",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Official n8n node for the conv2pdf API: convert and manipulate PDF files in your workflows (Word, Excel and PowerPoint to PDF, PDF to Word, merge, split, compress and more), hosted in France.",
 	"license": "MIT",
-	"homepage": "https://conv2pdf.com/api/",
+	"homepage": "https://conv2pdf.com/en/api/",
 	"keywords": [
 		"n8n-community-node-package",
 		"n8n",
